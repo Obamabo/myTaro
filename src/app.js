@@ -1,15 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
 import Index from './pages/index'
-import TodoList from './pages/nerv';
 
 import './app.less'
 
 class App extends Component {
   config = {
     pages: [
-      'pages/index/index',
-      'pages/nerv/index',
+      'pages/index/index'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -29,10 +26,7 @@ class App extends Component {
 
   render () {
     return (
-      <View>
-        <Index />
-        <TodoList />
-      </View>
+      <Index />
     )
   }
 }

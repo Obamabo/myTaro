@@ -34,7 +34,8 @@ class TodoList extends Component {
     const todos = this.state.todos.concat()
     todos.push(todoItem)
     this.setState({
-      todos
+      todos,
+      inputTodoValue: ''
     })
   }
 

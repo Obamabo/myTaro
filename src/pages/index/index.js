@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Icon } from '@tarojs/components'
+import TodoList from '../nerv/index';
 import './index.less'
 
 export default class Index extends Component {
@@ -35,6 +36,7 @@ export default class Index extends Component {
                         </Text>
                     </View>
                 </View>
+                <TodoList />
             </View>
         )
     }
